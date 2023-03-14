@@ -33,7 +33,6 @@ public class Wizard {
     }
 
 
-
     public int getMp() {
         return mp;
     }
