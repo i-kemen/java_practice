@@ -3,12 +3,12 @@ package com.nhk.game;
 import java.util.Random;
 
 public class Cleric {
-    String name;
-    int hp = 50;
-    int mp = 10;
+    private String name;
+    private int hp = 50;
+    private int mp = 10;
     // 연습문제 9-1
-    static final int maxHp = 50;
-    static final int maxMp = 10;
+    public static final int maxHp = 50;
+    public static final int maxMp = 10;
 
     // 연습문제 9-2
     // 이 클래스는 new Cleric(“아서스", 40, 5) 와 같이, 이름, HP, MP 를 지정하여 인스턴스화 할 수 있다
@@ -28,8 +28,17 @@ public class Cleric {
         this(name, maxHp, maxMp);
     }
 
+
     // 이 클래스는 new Cleric() 과 같이 이름을 지정하지 않는 경우에는 인스턴스화 할 수 없다고 한다. (이름이 없는 성직자는 존재 할 수 없음)
     // 생성자는 가능한 한 중복되는 코드가 없도록 작성한다
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
 
 
 

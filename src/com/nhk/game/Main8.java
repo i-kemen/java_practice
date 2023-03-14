@@ -2,20 +2,20 @@ package com.nhk.game;
 
 public class Main8 {
     int num = 10;
-    
+
     public static void solution() {}
 
     public static void main(String[] args) {
         // TODO Auto-generated method stub
         Main8 main = new Main8();
         System.out.println(main.num);
-        
-        
-        
+
+
+
         // 가상 세계에 용사를 생성
-        
-        
-        
+
+
+
         Main8.solution();
 
 
@@ -38,9 +38,7 @@ public class Main8 {
         kinoko2.hp = 48;
         kinoko2.suffix = 'B';
 
-        Cleric cleric = new Cleric();
-
-        cleric.name = "레오나";
+        Cleric cleric = new Cleric("레오나");
 
 
 
@@ -51,8 +49,8 @@ public class Main8 {
         hero.run();
         // 클레릭 행위
         cleric.selfAid();
-        System.out.println(cleric.mp);
+
         cleric.pray(3);
-        System.out.println(cleric.mp);
+
     }
 }
