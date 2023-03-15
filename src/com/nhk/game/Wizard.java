@@ -26,10 +26,11 @@ public class Wizard {
     }
 
     public void setHp(int hp) {
-        if (hp < 0) {
+        if (hp <= 0) {
             this.hp = 0;
+        } else {
+            this.hp = hp;
         }
-        this.hp = hp;
     }
 
 
