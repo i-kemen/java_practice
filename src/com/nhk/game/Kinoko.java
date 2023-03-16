@@ -1,6 +1,6 @@
 package com.nhk.game;
 
-public class Kinoko {
+public class Kinoko implements Life {
     // 속성
     int hp;
 

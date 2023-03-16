@@ -1,5 +1,8 @@
 package com.nhk.game;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Main8 {
     int num = 10;
 
@@ -9,8 +12,20 @@ public class Main8 {
         // TODO Auto-generated method stub
         Main8 main = new Main8();
         System.out.println(main.num);
-
-
+        
+        List<Hero> list = new ArrayList<>();
+        
+        Hero hero = new Hero();
+        hero.name = "아이폰";
+        list.add(hero);
+        System.out.println(list.size());
+        
+        hero = new Hero();
+        hero.name = "갤럭시";
+        list.remove(hero);
+        System.out.println(list.size());
+        
+     
 
         // 가상 세계에 용사를 생성
 
@@ -19,7 +34,7 @@ public class Main8 {
         Main8.solution();
 
 
-        Hero hero = new Hero("브록시가", 1000000);
+        Hero hero2 = new Hero("브록시가", 1000000);
 
         // 생성된 용사에게 최초의 HP 와 이름을 설정
         hero.hp = 100;

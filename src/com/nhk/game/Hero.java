@@ -7,7 +7,7 @@ public class Hero {
     // member variable
     // property
     // 국룰은 필드나 멤버, 여기서는 String name과 int hp가 해당
-    String name;
+
 
     public String getName() {
         return name;
@@ -43,6 +43,7 @@ public class Hero {
 
     int hp;
     Sword sword;
+    public String name;
 
 
 

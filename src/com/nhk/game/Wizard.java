@@ -1,6 +1,6 @@
 package com.nhk.game;
 
-public class Wizard {
+public class Wizard implements Life{
 
     private String name;
     private int hp;
