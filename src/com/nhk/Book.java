@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.Set;
 import javax.naming.Name;
 
-public class Book implements Comparable<Book> {
+public class Book implements Comparable<Book>, Cloneable {
     private String title;
     private Date publishDate;
     private String comment;
@@ -56,7 +56,7 @@ public class Book implements Comparable<Book> {
         if (!(o instanceof Book))
             return false;
         Book book = (Book) o;
-        if (!(this.title.equals(book.title)) && !(this.publishDate.equals(book.publishDate))) {
+        if (!(this.title.equals(book.title)) || !(this.publishDate.equals(book.publishDate))) {
             return false;
         }
         return true;
